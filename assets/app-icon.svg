@@ -1,0 +1,56 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="128" y2="128">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#080C14" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="128" y2="128">
+      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="iconBar1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00D9FF" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="iconBar2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+    <linearGradient id="iconBar3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+    <linearGradient id="iconSpark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00FFFF" />
+      <stop offset="50%" stop-color="#C084FC" />
+      <stop offset="100%" stop-color="#FF3DF5" />
+    </linearGradient>
+    <filter id="iconNeon" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Squircle App Container -->
+  <rect x="2" y="2" width="124" height="124" rx="28" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="2.5" />
+
+  <!-- Ambient Glow Behind Bars -->
+  <circle cx="82" cy="46" r="32" fill="#6366F1" opacity="0.25" filter="blur(16px)" />
+  <circle cx="94" cy="36" r="22" fill="#00D9FF" opacity="0.35" filter="blur(12px)" />
+
+  <!-- 3 Vertical Rectangular Boxes (Increasing in Height) -->
+  <!-- Bar 1: Developer Growth -->
+  <rect x="28" y="68" width="16" height="34" rx="8" fill="url(#iconBar1)" />
+  <!-- Bar 2: Progress -->
+  <rect x="52" y="48" width="16" height="54" rx="8" fill="url(#iconBar2)" />
+  <!-- Bar 3: Collaboration & Building Projects Together -->
+  <rect x="76" y="28" width="17" height="74" rx="8.5" fill="url(#iconBar3)" filter="url(#iconNeon)" />
+
+  <!-- The Spark ✦: Innovation, AI & Creativity -->
+  <path d="M 100 16 C 100 24, 103 27, 111 27 C 103 27, 100 30, 100 38 C 100 30, 97 27, 89 27 C 97 27, 100 24, 100 16 Z"
+        fill="url(#iconSpark)" filter="url(#iconNeon)" />
+</svg>
